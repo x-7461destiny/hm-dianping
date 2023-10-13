@@ -97,7 +97,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         stringRedisTemplate.expire(tokenKey,LOGIN_USER_TTL,TimeUnit.MINUTES);
 //        session.setAttribute("user", BeanUtil.copyProperties(user, UserDTO.class));
         // 返回token
-        return Result.ok(tokenKey);
+        return Result.ok(token);
     }
 
     private User createUserWithPhone(String phone) {

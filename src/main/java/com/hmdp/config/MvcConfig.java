@@ -22,9 +22,9 @@ public class MvcConfig implements WebMvcConfigurer {
                         "/user/code",
                         "/user/login",
                         "/blog/hot",
-                        "shop/**",
+                        "/shop/**",
                         "/shop-type/**",
-                        "upload/**",
+                        "/upload/**",
                         "/voucher/**"
                 ).order(1);
 //        token 刷新拦截器
