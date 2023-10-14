@@ -178,7 +178,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
         stringRedisTemplate.delete(key);
     }
 
-
+*/
     public void saveShop2Redis(Long id, Long expireSecond) throws InterruptedException {
         // 1. 查询店铺数据
         Shop shop = getById(id);
@@ -191,7 +191,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
         stringRedisTemplate.opsForValue().set(CACHE_SHOP_KEY + id, JSONUtil.toJsonStr(redisData));
     }
 
- */
+// */
     @Override
     @Transactional
     public Result update_shop(Shop shop) {
