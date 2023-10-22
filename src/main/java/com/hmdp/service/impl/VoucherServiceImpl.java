@@ -36,6 +36,7 @@ public class VoucherServiceImpl extends ServiceImpl<VoucherMapper, Voucher> impl
         // 查询优惠券信息
         List<Voucher> vouchers = getBaseMapper().queryVoucherOfShop(shopId);
         // 返回结果
+        log.error("优惠券");
         return Result.ok(vouchers);
     }
 
