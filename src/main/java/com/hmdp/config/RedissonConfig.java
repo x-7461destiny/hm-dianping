@@ -12,7 +12,7 @@ public class RedissonConfig {
     public RedissonClient redissonClient() {
         // 配置
         Config config = new Config();
-        config.useSingleServer().setAddress("redis://129.154.200.53:6550").setPassword("9*NJU:^v,p*,1si),Djm");
+        config.useSingleServer().setAddress("");
         //创建redissonClient对象
         return Redisson.create(config);
     }
@@ -28,7 +28,7 @@ public class RedissonConfig {
 //    public RedissonClient redissonClient3() {
 //        // 配置
 //        Config config = new Config();
-//        config.useSingleServer().setAddress("redis://47.107.53.47:6550").setPassword("www@7251.comiu");
+//        config.useSingleServer().setAddress("");
 //        //创建redissonClient对象
 //        return Redisson.create(config);
 //    }
